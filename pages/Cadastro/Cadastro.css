@@ -1,0 +1,28 @@
+.labelValidacao {
+    color: red;
+}
+
+#botaoContinuar {
+    width: 250px; 
+    background-color: rgb(39, 100, 39); 
+    border: 1px solid rgb(39, 100, 39);
+    box-shadow: 2px 2px 2px #c1c1c1;
+}
+
+#botaoContinuar:hover{
+    background-color:rgb(23, 65, 23);
+}
+
+#botaoContinuar:active{
+    background-color: rgb(18, 51, 18);
+}
+
+.form-outline .form-control:focus {
+    outline: none !important; /* Remove o contorno padrão */
+    border-color: red !important; /* Altera a cor da borda */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5) !important; /* Adiciona um efeito de sombra ao focar */
+  }
+
+a {
+  color: rgb(39, 100, 39) !important;  
+}

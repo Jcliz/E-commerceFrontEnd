@@ -1,0 +1,21 @@
+.labelValidacao {
+    color: red;
+    display: none;
+}
+
+#botaoContinuar {
+    width: 250px; 
+    background-color: rgb(39, 100, 39); 
+    border: 1px solid rgb(39, 100, 39);
+    box-shadow: 2px 2px 2px #c1c1c1;
+}
+
+#botaoContinuar:hover{
+    background-color:rgb(23, 65, 23);
+}
+
+#botaoContinuar:active{
+    background-color: rgb(18, 51, 18);
+}
+
+  

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Modal Example</title>
+    <link rel="stylesheet" href="/Produtos/produtos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/Tela Inicial/telainicial.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <img class="logo" src="/Images/Logo.png" alt="Logo" width="80" height="40">
+            </a>
+    
+            </svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" style="margin: 0 25px" class="nav-link px-2 link-dark">Novidades</a></li>
+              <li><a href="/Produtos/produtos.html" style="margin: 0 25px" class="nav-link px-2 link-dark">Produtos</a></li>
+              <li><a href="#" style="margin: 0 25px" class="nav-link px-2 link-dark">Meus pedidos</a></li>
+              <li><a href="#" style="margin: 0 25px" class="nav-link px-2 link-dark">Ajuda</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control" placeholder="Busque..." aria-label="Search">
+            </form>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="/Login/login.html" style="margin: 0 25px; color: rgb(39, 100, 39) !important;" class="nav-link px-2 link-secondary">Entrar</a></li>
+              <li><a href="/Cadastro/Cadastro.html" style="margin: 0 25px; color: rgb(39, 100, 39) !important;" class="nav-link px-2 link-secondary">Cadastre-se</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    <div class="container mt-5">
+        <!-- Button to Open the Modal -->
+        <!-- The Modal -->
+        <dialog id="modal">
+            <form id="addProductForm">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adicionar Produto</h5>
+                    <button type="button" class="btn-close" onclick="closeModal()" id="botaoSair"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="productName" class="form-label">Nome do Produto</label>
+                        <input type="text" class="form-control" id="productName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productCode" class="form-label">Código do Produto</label>
+                        <input type="text" class="form-control" id="productCode" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="productPrice" class="form-label">Preço</label>
+                        <input type="number" class="form-control" id="productPrice" step="0.01" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Fechar</button>
+                    <button type="submit" class="btn btn-primary">Adicionar Produto</button>
+                </div>
+            </form>
+        </dialog>
+
+        <!-- Product Table -->
+        <div class="mt-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Nome do Produto</th>
+                        <th scope="col">Código do Produto</th>
+                        <th scope="col">Preço</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="productTableBody">
+                    <!-- Product rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="openModal()">Abrir Modal</button>
+    </div>
+
+
+<script src="/Produtos/produtos.js"></script>
+
+</html>

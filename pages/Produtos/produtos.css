@@ -1,0 +1,13 @@
+dialog {
+    border: none;
+    border-radius: 0.3rem;
+}
+.btn-group {
+    display: flex;
+    gap: 5px;
+}
+
+#botaoSair {
+    position: relative;
+    left: 3vw;
+}
