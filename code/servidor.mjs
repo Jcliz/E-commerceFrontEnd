@@ -10,7 +10,7 @@ const server = createServer((req, res) => {
     console.log(`Received request for ${req.url}`);
 
     // Ajustar o caminho do arquivo com base na URL da requisição
-    let filePath = join(__dirname, req.url === '/' ? 'Tela Inicial/telainicial.html' : req.url);
+    let filePath = join(__dirname, req.url === '/' ? 'pages/Tela Inicial/telainicial.html' : req.url);
 
     // Definir o tipo de conteúdo com base na extensão do arquivo
     const ext = extname(filePath);
