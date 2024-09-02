@@ -1,3 +1,10 @@
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 dialog {
     border: none;
     border-radius: 0.3rem;
@@ -7,7 +14,23 @@ dialog {
     gap: 5px;
 }
 
-#botaoSair {
-    position: relative;
-    left: 2vw;
+.cadastro {
+    text-align: center !important;
+    
+}
+
+.nav-link {
+    transition: transform 0.3s !important; 
+}
+
+.nav-link:hover {
+    transform: scale(1.20) !important; 
+}
+
+.nav-link, .cadastro {
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+    color: #000;
+    font-weight: normal;
+    /* border: 1px solid lightgray; */
 }
